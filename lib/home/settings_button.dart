@@ -50,6 +50,7 @@ class _SettingsButtonState extends State<SettingsButton> {
                         child: isSelector
                             ? Selector(
                                 selection: selection,
+                                state: this,
                               )
                             : Column(
                                 mainAxisAlignment:
@@ -96,8 +97,10 @@ class _SettingsButtonState extends State<SettingsButton> {
 enum Selection { location, method, timezone }
 
 class Selector extends StatefulWidget {
+  final _SettingsButtonState state;
   final Selection selection;
-  const Selector({Key? key, required this.selection}) : super(key: key);
+  const Selector({Key? key, required this.selection, required this.state})
+      : super(key: key);
 
   @override
   _SelectorState createState() => _SelectorState();
@@ -107,7 +110,9 @@ class _SelectorState extends State<Selector> {
   @override
   Widget build(BuildContext context) {
     if (widget.selection == Selection.location) {
-      return ZilaContainer();
+      return LocationContainer(
+        settingsButtonstate: widget.state,
+      );
     } else if (widget.selection == Selection.timezone) {
       return Text('TimeZone');
     } else if (widget.selection == Selection.method) {
@@ -117,21 +122,22 @@ class _SelectorState extends State<Selector> {
   }
 }
 
-class ZilaContainer extends StatefulWidget {
-  const ZilaContainer({
-    Key? key,
-  }) : super(key: key);
+class LocationContainer extends StatefulWidget {
+  final _SettingsButtonState settingsButtonstate;
+  const LocationContainer({Key? key, required this.settingsButtonstate})
+      : super(key: key);
 
   @override
-  _ZilaContainerState createState() => _ZilaContainerState();
+  _LocationContainerState createState() => _LocationContainerState();
 }
 
-class _ZilaContainerState extends State<ZilaContainer> {
+class _LocationContainerState extends State<LocationContainer> {
   late Location location;
-  bool isDistrict = false;
+  bool isZilas = false;
+  int zilaIndex = 0;
   int districtIndex = 0;
-  bool isSubDistrict = false;
-  int subDistrictIndex = 0;
+  bool isUpazilas = false;
+  int upazilaIndex = 0;
   @override
   void initState() {
     location = Location.fromJson(locations);
@@ -142,23 +148,30 @@ class _ZilaContainerState extends State<ZilaContainer> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Column(
-      children: isDistrict
-          ? location.districts[districtIndex].zilas
+      children: isUpazilas
+          ? location.districts[districtIndex].zilas[zilaIndex].upazilas
               .map((e) => TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      print(e.name);
+                      print(e.lat);
+                      print(e.long);
+                      widget.settingsButtonstate.isSelector = false;
+                    });
+                  },
                   child: Text(
                     e.name,
                     style: TextStyle(color: Color(0xFF000000)),
                   )))
               .toList()
-          : [
-              ...location.districts
+          : isZilas
+              ? location.districts[districtIndex].zilas
                   .map((e) => TextButton(
                       onPressed: () {
                         setState(() {
-                          districtIndex = location.districts
+                          zilaIndex = location.districts[districtIndex].zilas
                               .indexWhere((element) => element == e);
-                          isDistrict = true;
+                          isUpazilas = true;
                         });
                       },
                       child: Text(
@@ -166,7 +179,22 @@ class _ZilaContainerState extends State<ZilaContainer> {
                         style: TextStyle(color: Color(0xFF000000)),
                       )))
                   .toList()
-            ],
+              : [
+                  ...location.districts
+                      .map((e) => TextButton(
+                          onPressed: () {
+                            setState(() {
+                              districtIndex = location.districts
+                                  .indexWhere((element) => element == e);
+                              isZilas = true;
+                            });
+                          },
+                          child: Text(
+                            e.name,
+                            style: TextStyle(color: Color(0xFF000000)),
+                          )))
+                      .toList()
+                ],
     ));
   }
 }
