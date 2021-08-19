@@ -112,13 +112,14 @@ class PrayerTimes {
 //Initialization
 
   PrayerTimeMethods prayerTimeMethods;
-  String method = 'MWL';
+  String? method;
   PrayerTimes({
     this.prayerTimeFormat = PrayerTimeFormat.h12,
     this.prayerTimeMethods = PrayerTimeMethods.muslimWorldLeague,
+    this.method,
   }) {
     this._timeFormat = prayerTimeFormat.format;
-    this.method = prayerTimeMethods.method;
+    this.method ??= prayerTimeMethods.method;
     methods.forEach((method, config) {
       defaultParams.forEach((name, value) {
         if (config['params']![name] == null) {
@@ -128,7 +129,7 @@ class PrayerTimes {
     });
     // initialize settings
 
-    methods.containsKey(method) ? calcMethod = method : calcMethod = 'MWL';
+    methods.containsKey(method) ? calcMethod = method! : calcMethod = 'MWL';
 
     Map params = methods[calcMethod]!['params'];
 
@@ -143,11 +144,12 @@ class PrayerTimes {
 // instance completed Ok
 
   // .......Interface Functions..........
+  // ignore: unused_element
   void _setMethod(PrayerTimeMethods prayerTimeMethods) {
     method = prayerTimeMethods.method;
     if (methods[method] != null) {
       _adjust(methods[method]!['params']);
-      calcMethod = method;
+      calcMethod = method!;
     }
   }
 
@@ -157,6 +159,7 @@ class PrayerTimes {
     });
   }
 
+  // ignore: unused_element
   void _tune(Map timeOffset) {
     timeOffset.forEach((key, value) {
       _offsets[key] = value;
@@ -202,7 +205,7 @@ class PrayerTimes {
     var hours = time.floorToDouble();
     var minutes = ((time - hours) * 60).floorToDouble();
     String suffix = format == '12h' ? suffixes[hours < 12 ? 0 : 1] : '';
-    var a = hours;
+
     var formattedTime = format == '24h'
         ? '${hours.toInt()}:${minutes.toInt()}'
         : '${(((hours + 11).toInt() % 12) + 1).toInt()}:${minutes.toInt()}';
@@ -256,6 +259,7 @@ class PrayerTimes {
 
     var e = 23.439 - 0.00000036 * D;
 
+    // ignore: non_constant_identifier_names
     var RA = _arctan2(_cos(e) * _sin(L), _cos(L)) / 15.0;
 
     var eqt = q / 15.0 - _fixhour(RA);
@@ -419,7 +423,9 @@ class PrayerTimes {
   }
   // _adjust times for locations in highter _latitudes
 
-  Map _adjustHigh_Lats(Map times) {
+  // ignore: non_constant_identifier_names
+  // ignore: unused_element
+  Map _adjustHighLats(Map times) {
     var params = settings;
     var nightTime = _timeDiff(times['sunset'], times['sunrise']);
     times['imsak'] = _adjustHLTime(times['imsak'], times['sunrise'],
@@ -499,6 +505,7 @@ class PrayerTimes {
 
   double _arcsin(x) => Angle.degrees(Angle.asin(x.toDouble()).degrees).degrees;
   double _arccos(x) => Angle.degrees(Angle.acos(x.toDouble()).degrees).degrees;
+  // ignore: unused_element
   double _arctan(x) => Angle.degrees(Angle.atan(x.toDouble()).degrees).degrees;
   double _arccot(x) =>
       Angle.degrees(Angle.atan(1.0 / x.toDouble()).degrees).degrees;

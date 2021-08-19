@@ -1,10 +1,6 @@
-import 'dart:async';
-
 import 'package:azhan_app/home/body.dart';
-import 'package:azhan_app/time_container/time_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:hijri_calculator/hijri_calculator.dart';
 import 'package:prayer_times/generated_prayer_times.dart';
 import 'package:prayer_times/prayer_times.dart';
 

@@ -1,5 +1,3 @@
-import 'package:azhan_app/locations/locations.dart';
-import 'package:azhan_app/classes/classes.dart';
 import 'package:hijri_calculator/hijri_calculator.dart';
 import 'package:prayer_times/prayer_times.dart';
 

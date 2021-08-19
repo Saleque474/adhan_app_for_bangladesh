@@ -3,8 +3,6 @@ import 'package:azhan_app/locations/locations.dart';
 import 'package:azhan_app/main.dart';
 import 'package:flutter/material.dart';
 
-import 'home.dart';
-
 class SettingsButton extends StatefulWidget {
   final size;
   const SettingsButton({Key? key, required this.size}) : super(key: key);
@@ -116,12 +114,59 @@ class _SelectorState extends State<Selector> {
     } else if (widget.selection == Selection.timezone) {
       return Text('TimeZone');
     } else if (widget.selection == Selection.method) {
-      return Text('Method');
+      return MethodContainer();
     }
     return Container();
   }
 }
 
+class MethodContainer extends StatelessWidget {
+  const MethodContainer({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          TextButton(
+            onPressed: () {},
+            child: Text('Muslim World League'), //MWL
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text('Islamic Society of North America (ISNA)'), //ISNA
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text('Egyptian General Authority of Survey'), //Egypt
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text('Umm Al-Qura University, Makkah'), //Makkah
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text('University of Islamic Sciences, Karachi'), //Karachi
+          ),
+          TextButton(
+            onPressed: () {},
+            child:
+                Text('Institute of Geophysics, University of Tehran'), //Tehran
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text('Shia Ithna-Ashari, Leva Institute, Qum'), //Jafari
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+//TODO LocationContainer
 class LocationContainer extends StatefulWidget {
   final _SettingsButtonState settingsButtonstate;
   const LocationContainer({Key? key, required this.settingsButtonstate})
@@ -153,9 +198,6 @@ class _LocationContainerState extends State<LocationContainer> {
               .map((e) => TextButton(
                   onPressed: () {
                     setState(() {
-                      print(e.name);
-                      print(e.lat);
-                      print(e.long);
                       widget.settingsButtonstate.isSelector = false;
                     });
                   },
@@ -231,6 +273,7 @@ class _TimeZoneSelectorState extends State<TimeZoneSelector> {
   }
 }
 
+//TODO MethodSelector
 class MethodSelector extends StatefulWidget {
   const MethodSelector({Key? key, required this.widget, required this.state})
       : super(key: key);
