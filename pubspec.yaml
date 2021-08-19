@@ -30,6 +30,7 @@ dependencies:
     path: packages/hijri_calculator/
   flutter_qiblah: ^2.0.1
   flutter_svg: ^0.22.0
+  shared_preferences:
 
 dev_dependencies:
   flutter_test:

@@ -1,9 +1,9 @@
 Map locations = {
-  'zilas': [
+  'districts': [
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'দেবিদ্বার', 'lat': 23.6115, 'long': 90.9773},
             {'name': 'বরুড়া', 'lat': 23.3762, 'long': 91.0556},
             {'name': 'ব্রাহ্মণপাড়া', 'lat': 23.6225, 'long': 91.1017},
@@ -25,7 +25,7 @@ Map locations = {
           'name': 'কুমিল্লা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ছাগলনাইয়া উপজেলা', 'lat': 23.0386, 'long': 91.5184},
             {'name': 'ফেনী সদর', 'lat': 23.0159, 'long': 91.3976},
             {'name': 'সোনাগাজী উপজেলা', 'lat': 22.8491, 'long': 91.3916},
@@ -36,7 +36,7 @@ Map locations = {
           'name': 'ফেনী'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ব্রাহ্মণবাড়িয়া সদর', 'lat': 23.9258, 'long': 91.1161},
             {'name': 'কসবা', 'lat': 23.7474, 'long': 91.1257},
             {'name': 'নাসিরনগর', 'lat': 24.1954, 'long': 91.1984},
@@ -50,7 +50,7 @@ Map locations = {
           'name': 'ব্রাহ্মণবাড়িয়া'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'রাঙ্গামাটি সদর', 'lat': 22.6530, 'long': 92.1788},
             {'name': 'কাপ্তাই', 'lat': 22.4944, 'long': 92.2212},
             {'name': 'কাউখালী', 'lat': 22.6074, 'long': 90.0845},
@@ -65,7 +65,7 @@ Map locations = {
           'name': 'রাঙ্গামাটি'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'নোয়াখালী', 'lat': 22.8246, 'long': 91.1017},
             {'name': 'কোম্পানীগঞ্জ', 'lat': 25.0882, 'long': 91.7551},
             {'name': 'বেগমগঞ্জ', 'lat': 22.9319, 'long': 91.0921},
@@ -79,7 +79,7 @@ Map locations = {
           'name': 'নোয়াখালী'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'হাইমচর', 'lat': 23.0595, 'long': 90.5920},
             {'name': 'কচুয়া', 'lat': 23.3411, 'long': 90.8890},
             {'name': 'শাহরাস্তি', 'lat': 23.2306, 'long': 90.9486},
@@ -91,7 +91,7 @@ Map locations = {
           'name': 'চাঁদপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'লক্ষ্মীপুর সদর', 'lat': 22.9512, 'long': 90.8675},
             {'name': 'কমলনগর', 'lat': 22.5896, 'long': 90.9942},
             {'name': 'রায়পুর', 'lat': 21.2514, 'long': 81.6296},
@@ -101,7 +101,7 @@ Map locations = {
           'name': 'লক্ষ্মীপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'রাঙ্গুনিয়া', 'lat': 22.4695, 'long': 92.0518},
             {'name': 'সীতাকুন্ড উপজেলা', 'lat': 22.6168, 'long': 91.6809},
             {'name': 'মীরসরাই', 'lat': 22.7730, 'long': 91.5742},
@@ -121,7 +121,7 @@ Map locations = {
           'name': 'চট্টগ্রাম'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'কক্সবাজার সদর', 'lat': 21.4272, 'long': 92.0061},
             {'name': 'চকরিয়া', 'lat': 21.7250, 'long': 92.0469},
             {'name': 'কুতুবদিয়া', 'lat': 21.8167, 'long': 91.8583},
@@ -134,7 +134,7 @@ Map locations = {
           'name': 'কক্সবাজার'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'খাগড়াছড়ি সদর', 'lat': 23.0946, 'long': 91.9726},
             {'name': 'দিঘীনালা', 'lat': 23.2408, 'long': 92.0641},
             {'name': 'পানছড়ি', 'lat': 23.3025, 'long': 91.8977},
@@ -148,7 +148,7 @@ Map locations = {
           'name': 'খাগড়াছড়ি'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বান্দরবান সদর', 'lat': 22.1960, 'long': 92.2176},
             {'name': 'আলীকদম', 'lat': 21.6530, 'long': 92.3148},
             {'name': 'নাইক্ষ্যংছড়ি', 'lat': 21.4269, 'long': 92.1757},
@@ -163,9 +163,9 @@ Map locations = {
       'name': 'চট্টগ্রাম বিভাগ'
     },
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বেলকুচি', 'lat': 24.2949, 'long': 89.6983},
             {'name': 'চৌহালি', 'lat': 24.1943, 'long': 89.7470},
             {'name': 'কামারখন্দ', 'lat': 24.3605, 'long': 89.6652},
@@ -179,7 +179,7 @@ Map locations = {
           'name': 'সিরাজগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'সুজানগর', 'lat': 23.9422, 'long': 89.4210},
             {'name': 'ঈশ্বরদী', 'lat': 24.1290, 'long': 89.0715},
             {'name': 'ভাঙ্গুড়া', 'lat': 24.2174, 'long': 89.3781},
@@ -193,7 +193,7 @@ Map locations = {
           'name': 'পাবনা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'কাহালু উপজেলা', 'lat': 24.8331, 'long': 89.2689},
             {'name': 'বগুড়া সদর', 'lat': 24.8481, 'long': 89.3730},
             {'name': 'সারিয়াকান্দি', 'lat': 24.8888, 'long': 89.5710},
@@ -210,7 +210,7 @@ Map locations = {
           'name': 'বগুড়া'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'পবা উপজেলা', 'lat': 24.4350, 'long': 88.6434},
             {'name': 'দুর্গাপুর উপজেলা', 'lat': 25.1133, 'long': 90.6749},
             {'name': 'মোহনপুর উপজেলা', 'lat': 24.5449, 'long': 88.6362},
@@ -224,7 +224,7 @@ Map locations = {
           'name': 'রাজশাহী'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'নাটোর সদর', 'lat': 24.4084, 'long': 88.9750},
             {'name': 'সিংড়া', 'lat': 24.5000, 'long': 89.1431},
             {'name': 'বড়াইগ্রাম', 'lat': 24.3170, 'long': 89.1635},
@@ -236,7 +236,7 @@ Map locations = {
           'name': 'নাটোর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'আক্কেলপুর উপজেলা', 'lat': 24.9693, 'long': 89.0203},
             {'name': 'কালাই উপজেলা', 'lat': 25.0606, 'long': 89.1695},
             {'name': 'ক্ষেতলাল উপজেলা', 'lat': 25.0380, 'long': 89.1086},
@@ -246,7 +246,7 @@ Map locations = {
           'name': 'জয়পুরহাট'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'চাঁপাইনবাবগঞ্জ সদর', 'lat': 24.5915, 'long': 88.2821},
             {'name': 'গোমস্তাপুর', 'lat': 24.7934, 'long': 88.2898},
             {'name': 'নাচোল', 'lat': 24.7327, 'long': 88.4137},
@@ -256,7 +256,7 @@ Map locations = {
           'name': 'চাঁপাইনবাবগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'মহাদেবপুর উপজেলা', 'lat': 24.9198, 'long': 88.7518},
             {'name': 'বদলগাছী উপজেলা', 'lat': 24.9685, 'long': 88.9102},
             {'name': 'পত্নিতলা উপজেলা', 'lat': 25.0612, 'long': 88.7325},
@@ -275,9 +275,9 @@ Map locations = {
       'name': 'রাজশাহী বিভাগ'
     },
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'মণিরামপুর', 'lat': 23.0242, 'long': 89.2327},
             {'name': 'অভয়নগর', 'lat': 23.0120, 'long': 89.3890},
             {'name': 'বাঘারপাড়া', 'lat': 23.2204, 'long': 89.3467},
@@ -290,7 +290,7 @@ Map locations = {
           'name': 'যশোর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'আশাশুনি', 'lat': 22.5409, 'long': 89.1619},
             {'name': 'দেবহাটা', 'lat': 22.5809, 'long': 88.9892},
             {'name': 'কলারোয়া', 'lat': 22.8573, 'long': 89.0417},
@@ -302,7 +302,7 @@ Map locations = {
           'name': 'সাতক্ষীরা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'মুজিবনগর', 'lat': 23.6468, 'long': 88.5929},
             {'name': 'মেহেরপুর সদর', 'lat': 23.7723, 'long': 88.6311},
             {'name': 'গাংনী', 'lat': 23.8207, 'long': 88.7422}
@@ -310,7 +310,7 @@ Map locations = {
           'name': 'মেহেরপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'নড়াইল সদর', 'lat': 23.1657, 'long': 89.4990},
             {'name': 'লোহাগড়া', 'lat': 23.1825, 'long': 89.6510},
             {'name': 'কালিয়া', 'lat': 23.0303, 'long': 89.6303}
@@ -318,7 +318,7 @@ Map locations = {
           'name': 'নড়াইল'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'চুয়াডাঙ্গা সদর', 'lat': 23.6422, 'long': 88.8576},
             {'name': 'আলমডাঙ্গা', 'lat': 23.7627, 'long': 88.9438},
             {'name': 'দামুড়হুদা', 'lat': 23.6155, 'long': 88.7494},
@@ -327,7 +327,7 @@ Map locations = {
           'name': 'চুয়াডাঙ্গা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'কুষ্টিয়া সদর', 'lat': 23.8799, 'long': 89.0920},
             {'name': 'কুমারখালী', 'lat': 23.8596, 'long': 89.2396},
             {'name': 'খোকসা', 'lat': 23.8058, 'long': 89.2836},
@@ -338,7 +338,7 @@ Map locations = {
           'name': 'কুষ্টিয়া'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'শালিখা', 'lat': 23.3021, 'long': 89.3761},
             {'name': 'শ্রীপুর', 'lat': 23.5939, 'long': 89.3976},
             {'name': 'মাগুরা সদর', 'lat': 23.4856, 'long': 89.4191},
@@ -347,7 +347,7 @@ Map locations = {
           'name': 'মাগুরা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'পাইকগাছা', 'lat': 22.5931, 'long': 89.3168},
             {'name': 'ফুলতলা উপজেলা', 'lat': 22.9706, 'long': 89.4506},
             {'name': 'দিঘলিয়া উপজেলা', 'lat': 22.8958, 'long': 89.5218},
@@ -361,7 +361,7 @@ Map locations = {
           'name': 'খুলনা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ফকিরহাট', 'lat': 22.7775, 'long': 89.7075},
             {'name': 'বাগেরহাট সদর', 'lat': 22.6551, 'long': 89.7662},
             {'name': 'মোল্লাহাট', 'lat': 22.9267, 'long': 89.8061},
@@ -375,7 +375,7 @@ Map locations = {
           'name': 'বাগেরহাট'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ঝিনাইদহ সদর', 'lat': 23.5528, 'long': 89.1754},
             {'name': 'শৈলকুপা', 'lat': 23.6841, 'long': 89.2420},
             {'name': 'হরিণাকুন্ডু', 'lat': 23.6488, 'long': 89.0430},
@@ -389,9 +389,9 @@ Map locations = {
       'name': 'খুলনা বিভাগ'
     },
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ঝালকাঠি সদর', 'lat': 22.6407, 'long': 90.1987},
             {'name': 'কাঠালিয়া', 'lat': 22.4410, 'long': 90.1406},
             {'name': 'নলছিটি', 'lat': 22.6283, 'long': 90.2688},
@@ -400,7 +400,7 @@ Map locations = {
           'name': 'ঝালকাঠি'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বাউফল', 'lat': 22.4193, 'long': 90.5565},
             {'name': 'পটুয়াখালী সদর', 'lat': 22.3588, 'long': 90.3452},
             {'name': 'দুমকি', 'lat': 22.4645, 'long': 90.3843},
@@ -413,7 +413,7 @@ Map locations = {
           'name': 'পটুয়াখালী'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'পিরোজপুর সদর', 'lat': 22.5841, 'long': 89.9721},
             {'name': 'নাজিরপুর', 'lat': 22.7867, 'long': 89.9813},
             {'name': 'কাউখালী', 'lat': 22.6074, 'long': 90.0845},
@@ -425,7 +425,7 @@ Map locations = {
           'name': 'পিরোজপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বরিশাল সদর', 'lat': 22.7010, 'long': 90.3535},
             {'name': 'বাকেরগঞ্জ', 'lat': 22.5409, 'long': 90.3332},
             {'name': 'বাবুগঞ্জ', 'lat': 22.8173, 'long': 90.3246},
@@ -440,7 +440,7 @@ Map locations = {
           'name': 'বরিশাল'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ভোলা সদর', 'lat': 22.6855, 'long': 90.6439},
             {'name': 'বোরহান উদ্দিন', 'lat': 22.4974, 'long': 90.7165},
             {'name': 'চরফ্যাশন', 'lat': 22.0524838, 'long': 90.4384878},
@@ -452,7 +452,7 @@ Map locations = {
           'name': 'ভোলা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'আমতলী', 'lat': 22.1339, 'long': 90.2362},
             {'name': 'বরগুনা সদর', 'lat': 22.1605, 'long': 90.1201},
             {'name': 'বেতাগী উপজেলা', 'lat': 22.4142, 'long': 90.1659},
@@ -466,9 +466,9 @@ Map locations = {
       'name': 'বরিশাল বিভাগ'
     },
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বালাগঞ্জ', 'lat': 24.6549, 'long': 91.8240},
             {'name': 'বিয়ানীবাজার', 'lat': 24.8220, 'long': 92.1585},
             {'name': 'বিশ্বনাথ', 'lat': 24.8138, 'long': 91.7563},
@@ -486,7 +486,7 @@ Map locations = {
           'name': 'সিলেট'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বড়লেখা', 'lat': 24.7102, 'long': 92.1950},
             {'name': 'কমলগঞ্জ', 'lat': 24.3583, 'long': 91.8610},
             {'name': 'কুলাউড়া', 'lat': 24.5255, 'long': 92.0347},
@@ -498,7 +498,7 @@ Map locations = {
           'name': 'মৌলভীবাজার'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'নবীগঞ্জ', 'lat': 24.5672, 'long': 91.5136},
             {'name': 'বাহুবল', 'lat': 24.3412, 'long': 91.5378},
             {'name': 'আজমিরীগঞ্জ', 'lat': 24.5489, 'long': 91.2362},
@@ -512,7 +512,7 @@ Map locations = {
           'name': 'হবিগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'সুনামগঞ্জ সদর', 'lat': 25.0668, 'long': 91.4073},
             {'name': 'দক্ষিণ সুনামগঞ্জ', 'lat': 24.9150, 'long': 91.4581},
             {'name': 'বিশ্বম্ভরপুর', 'lat': 25.0988, 'long': 91.2999},
@@ -531,9 +531,9 @@ Map locations = {
       'name': 'সিলেট বিভাগ'
     },
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বেলাবো', 'lat': 24.1050, 'long': 90.8514},
             {'name': 'মনোহরদী', 'lat': 24.1410, 'long': 90.7032},
             {'name': 'নরসিংদী', 'lat': 23.9191, 'long': 90.7177},
@@ -544,7 +544,7 @@ Map locations = {
           'name': 'নরসিংদী'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'কালীগঞ্জ', 'lat': 23.9645, 'long': 90.5731},
             {'name': 'কালিয়াকৈর', 'lat': 24.0693, 'long': 90.2220},
             {'name': 'কাপাসিয়া', 'lat': 24.1124, 'long': 90.5666},
@@ -554,7 +554,7 @@ Map locations = {
           'name': 'গাজীপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'শরিয়তপুর সদর', 'lat': 23.2195, 'long': 90.3483},
             {'name': 'নড়িয়া', 'lat': 23.3059, 'long': 90.4088},
             {'name': 'জাজিরা', 'lat': 23.3334616, 'long': 90.3129644},
@@ -565,7 +565,7 @@ Map locations = {
           'name': 'শরীয়তপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'আড়াইহাজার উপজেলা', 'lat': 23.7917, 'long': 90.6536},
             {'name': 'বন্দর উপজেলা', 'lat': 23.6328, 'long': 90.5247},
             {'name': 'নারায়নগঞ্জ সদর', 'lat': 23.6238, 'long': 90.5002},
@@ -575,7 +575,7 @@ Map locations = {
           'name': 'নারায়ণগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বাসাইল', 'lat': 24.2331, 'long': 90.0513},
             {'name': 'ভুয়াপুর', 'lat': 24.4663, 'long': 89.8703},
             {'name': 'দেলদুয়ার', 'lat': 24.1647, 'long': 89.9651},
@@ -592,7 +592,7 @@ Map locations = {
           'name': 'টাঙ্গাইল'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ইটনা', 'lat': 24.5278, 'long': 91.0958},
             {'name': 'কটিয়াদী', 'lat': 24.2522, 'long': 90.7967},
             {'name': 'ভৈরব', 'lat': 24.0555, 'long': 90.9802},
@@ -610,7 +610,7 @@ Map locations = {
           'name': 'কিশোরগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'হরিরামপুর', 'lat': 23.7484, 'long': 89.9743},
             {'name': 'সাটুরিয়া', 'lat': 23.9730, 'long': 90.0362},
             {'name': 'মানিকগঞ্জ সদর', 'lat': 23.8347, 'long': 90.0187},
@@ -622,7 +622,7 @@ Map locations = {
           'name': 'মানিকগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'সাভার', 'lat': 23.7932, 'long': 90.2713},
             {'name': 'ধামরাই', 'lat': 23.9179, 'long': 90.1546},
             {'name': 'কেরাণীগঞ্জ', 'lat': 23.7013, 'long': 90.3975},
@@ -632,7 +632,7 @@ Map locations = {
           'name': 'ঢাকা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'মুন্সিগঞ্জ সদর', 'lat': 23.5416, 'long': 90.5303},
             {'name': 'শ্রীনগর', 'lat': 23.5429, 'long': 90.2950},
             {'name': 'সিরাজদিখান', 'lat': 23.5962, 'long': 90.3937},
@@ -643,7 +643,7 @@ Map locations = {
           'name': 'মুন্সিগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'রাজবাড়ী সদর', 'lat': 23.7639, 'long': 89.6467},
             {'name': 'গোয়ালন্দ', 'lat': 23.7237, 'long': 89.7637},
             {'name': 'পাংশা', 'lat': 23.7800, 'long': 89.4127},
@@ -653,7 +653,7 @@ Map locations = {
           'name': 'রাজবাড়ী'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'মাদারীপুর সদর', 'lat': 23.1649, 'long': 90.1939},
             {'name': 'শিবচর', 'lat': 23.3343, 'long': 90.1866},
             {'name': 'কালকিনি', 'lat': 23.0755, 'long': 90.2267},
@@ -662,7 +662,7 @@ Map locations = {
           'name': 'মাদারীপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'গোপালগঞ্জ সদর', 'lat': 23.0132, 'long': 89.8225},
             {'name': 'কাশিয়ানী', 'lat': 23.2332, 'long': 89.7239},
             {'name': 'টুংগীপাড়া', 'lat': 22.8946, 'long': 89.8904},
@@ -672,7 +672,7 @@ Map locations = {
           'name': 'গোপালগঞ্জ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ফরিদপুর সদর', 'lat': 23.6019, 'long': 89.8334},
             {'name': 'আলফাডাঙ্গা', 'lat': 23.2901, 'long': 89.7026},
             {'name': 'বোয়ালমারী', 'lat': 23.3909, 'long': 89.6838},
@@ -689,9 +689,9 @@ Map locations = {
       'name': 'ঢাকা বিভাগ'
     },
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'পঞ্চগড়', 'lat': 26.3355, 'long': 88.5522},
             {'name': 'দেবীগঞ্জ', 'lat': 26.1202, 'long': 88.7589},
             {'name': 'বোদা', 'lat': 26.1951, 'long': 88.5588},
@@ -701,7 +701,7 @@ Map locations = {
           'name': 'পঞ্চগড়'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'নবাবগঞ্জ', 'lat': 23.6612, 'long': 90.1619},
             {'name': 'বীরগঞ্জ উপজেলা', 'lat': 25.8934, 'long': 88.6724},
             {'name': 'ঘোড়াঘাট', 'lat': 25.3007, 'long': 89.1809},
@@ -719,7 +719,7 @@ Map locations = {
           'name': 'দিনাজপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'লালমনিরহাট সদর', 'lat': 25.8748, 'long': 89.4553},
             {'name': 'কালীগঞ্জ', 'lat': 23.9554294, 'long': 90.5447881},
             {'name': 'হাতীবান্ধা', 'lat': 26.1422, 'long': 89.1349},
@@ -729,7 +729,7 @@ Map locations = {
           'name': 'লালমনিরহাট'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'সৈয়দপুর উপজেলা', 'lat': 25.7830, 'long': 88.8982},
             {'name': 'ডোমার উপজেলা', 'lat': 26.1015, 'long': 88.8215},
             {'name': 'ডিমলা', 'lat': 26.1489, 'long': 88.9197},
@@ -740,7 +740,7 @@ Map locations = {
           'name': 'নীলফামারী'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'সাদুল্লাপুর', 'lat': 25.3909, 'long': 89.4659},
             {'name': 'গাইবান্ধা সদর', 'lat': 25.3297, 'long': 89.5429},
             {'name': 'পলাশবাড়ী', 'lat': 25.2794, 'long': 89.3535},
@@ -752,7 +752,7 @@ Map locations = {
           'name': 'গাইবান্ধা'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ঠাকুরগাঁও সদর', 'lat': 26.0288, 'long': 88.4786},
             {'name': 'পীরগঞ্জ উপজেলা', 'lat': 25.8600, 'long': 88.3585},
             {'name': 'রাণীশংকৈল উপজেলা', 'lat': 25.8920, 'long': 88.2583},
@@ -762,7 +762,7 @@ Map locations = {
           'name': 'ঠাকুরগাঁও'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'রংপুর সদর', 'lat': 25.7439, 'long': 89.2756},
             {'name': 'গংগাচড়া', 'lat': 25.8301, 'long': 89.1196},
             {'name': 'তারাগঞ্জ উপজেলা', 'lat': 25.8080, 'long': 89.0356},
@@ -775,7 +775,7 @@ Map locations = {
           'name': 'রংপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'কুড়িগ্রাম সদর', 'lat': 25.8282, 'long': 89.6816},
             {'name': 'নাগেশ্বরী', 'lat': 25.9659, 'long': 89.6913},
             {'name': 'ভুরুঙ্গামারী', 'lat': 26.1084, 'long': 89.6699},
@@ -792,9 +792,9 @@ Map locations = {
       'name': 'রংপুর বিভাগ'
     },
     {
-      'districts': [
+      'zilas': [
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'শেরপুর সদর', 'lat': 25.0191, 'long': 90.0138},
             {'name': 'নালিতাবাড়ী উপজেলা', 'lat': 25.1414, 'long': 90.1870},
             {'name': 'শ্রীবরদী উপজেলা', 'lat': 25.1474, 'long': 89.9393},
@@ -804,7 +804,7 @@ Map locations = {
           'name': 'শেরপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'ফুলবাড়ীয়া', 'lat': 24.6251, 'long': 90.2665},
             {'name': 'ত্রিশাল', 'lat': 24.5817, 'long': 90.3949},
             {'name': 'ভালুকা', 'lat': 24.4079, 'long': 90.3866},
@@ -822,7 +822,7 @@ Map locations = {
           'name': 'ময়মনসিংহ'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'জামালপুর সদর', 'lat': 24.9074, 'long': 89.9502},
             {'name': 'মেলান্দহ', 'lat': 24.9813, 'long': 89.8271},
             {'name': 'ইসলামপুর', 'lat': 25.0813, 'long': 89.7895},
@@ -834,7 +834,7 @@ Map locations = {
           'name': 'জামালপুর'
         },
         {
-          'subdistricts': [
+          'upazilas': [
             {'name': 'বারহাট্টা', 'lat': 24.8986, 'long': 90.8842},
             {'name': 'দুর্গাপুর', 'lat': 25.1133, 'long': 90.6749},
             {'name': 'কেন্দুয়া', 'lat': 24.6620, 'long': 90.8423},
